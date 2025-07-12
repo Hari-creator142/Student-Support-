@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Support </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Support Request Form -->
+        <section class="support-form">
+            <h2>Need Help? Ask Here!</h2>
+            <form id="helpForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="question" placeholder="Describe your issue..." required></textarea>
+                <button type="submit">Submit Request</button>
+                <p id="formMsg"></p>
+            </form>
+        </section>
+
+        <!-- Student Resources -->
+        <section class="resources">
+            <h2>Helpful Resources</h2>
+            <div class="resource-input">
+                <input type="text" id="resourceInput" placeholder="Add resource name (e.g., GitHub)">
+                <button onclick="addResource()">Add</button>
+            </div>
+            <ul id="resourceList"></ul>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
